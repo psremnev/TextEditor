@@ -1,0 +1,177 @@
+.root-editor a {
+    cursor: pointer;
+}
+.root-editor {
+	font-family: monospace;
+    display: block;
+    background: #ffffff;
+    max-width: 100%;
+    min-width: 500px;
+    border: 2px solid #f1efef;
+    margin: auto auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 9px rgb(193 193 193 / 48%);
+}
+.text-area {
+    border-top: 2px solid #bebebe;
+    border-radius: 5px;
+    background-color: #ffffff12;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 10px;
+	overflow-y: auto;
+}
+
+.text-area:focus {
+	outline:none;
+}
+.weight > button, .align > button, .history > button  {
+	cursor: pointer;
+    font-weight: 700;
+    border: 1px solid #cbcbcb;
+    background: white;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+.weight > button:focus, .align > button:focus, .history > button:focus {
+	outline:none;
+}
+.weight > button:active, .align > button:active {
+	background:#dedcdc;
+}
+
+.toolbar {
+	display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #fafafa;
+    align-items: center;
+}
+
+.bar * {
+	margin:2px;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+
+.size {
+	display: flex;
+    flex-direction: row; 
+}
+
+.separator {
+	width: 2px;
+    background: #5b5b5b69;
+    border-radius: 5px;
+    outline: none;
+}
+
+.image-upload {
+	display:none;
+}
+.upload, .image-link, .create-link {
+	width: 45px;
+    height: 30px;
+    border: 1px solid #b6aeae;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.create-link-background {
+    position: fixed;
+    width: 312px;
+    height: 29px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    text-align: left;
+    font-size: 17px;
+    padding: 5px;
+    box-shadow: 0 0 15px rgb(139 139 139 / 50%);
+    padding-top: 9px;
+}
+.font-family{
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #c9c9c9;
+    padding: 5px;
+    max-width: 126px;
+}
+
+.font-family > option{
+    background-color:rgba(182, 182, 182, 0.425);
+}
+
+.text-color, .text-back-color {
+    border: 1px solid #959595;
+    border-radius: 50%;
+    width: 20px;
+    margin: 0 4px 0 4px;
+    outline: none;
+    cursor: pointer;
+}
+.text-head, .text-list, .text-index {
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #c9c9c9;
+    margin: 5px;
+}
+.text-paragraph, .text-br, .text-hr, .text-clear-format, .image-float-left, .image-float-right, .image-float-center {
+    border: 1px solid #c9c9c9;
+    border-radius: 16px;
+    background-color: aliceblue;
+    outline: none;
+    cursor: pointer;
+    margin: 5px;
+    height: 25px;
+}
+.text-paragraph:active, .text-br:active, .text-hr:active, .text-clear-format:active, .image-float-left:active, .image-float-right:active, .image-float-center:active  {
+    background-color: rgb(198, 228, 255);
+}
+
+.size-input {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 70px; /* Specific width is required for Firefox. */
+  margin-left:10px;
+  margin-right:10px;
+  background:none;
+}
+
+.size-input:focus {
+  outline: none;
+}
+
+/*стиль ползунка*/
+
+.size-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 0 0 5px rgb(10,5,5)
+}
+
+
+/*стиль полоски*/
+.size-input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  opacity:0.5;
+  background: #6d6d6d;
+  border-radius: 10px;
+  border: none;
+}
