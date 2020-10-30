@@ -49,7 +49,6 @@ class RichEditor extends HTMLElement {
 								<option>H4</option>
 								<option>H5</option>
 								<option>H6</option>
-								<option>H7</option>
 							</select>
 							<button class='text-paragraph'>Абзац<dbutton>
 							<button class='text-br'>br</button>
