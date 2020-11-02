@@ -216,10 +216,10 @@ export default class RichEditor extends HTMLElement {
 	}
 	
 	getText ()  {
-		return this.editArea.innerHTML;
+		return document.querySelector('.rooteditor .text-area').innerHTML;
 	}
 	setText (text) {
-		this.editArea.innerHTML = text;
+		document.querySelector('.rooteditor .text-area').innerHTML = text;
 	}
 	editorGetImage () {
 		return document.querySelectorAll('.text-area img')
