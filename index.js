@@ -216,7 +216,6 @@ export default class RichEditor extends HTMLElement {
 	}
 	
 	getText ()  {
-		console.log(this.editArea.innerHTML)
 		return this.editArea.innerHTML;
 	}
 	setText (text) {
