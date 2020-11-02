@@ -1,4 +1,4 @@
-class RichEditor extends HTMLElement {
+export default class RichEditor extends HTMLElement {
 	constructor(data) {
 		super()
 		this.innerHTML = `
